@@ -78,3 +78,20 @@ Explication des Éléments de la Structure :
     <body> :
 
         Contient tout le contenu visible de la page web (textes, images, liens, formulaires, etc.).
+
+## Les attributs
+
+Les attributs HTML sont essentiels pour personnaliser et enrichir le comportement des éléments HTML. En comprenant leur utilisation et en les utilisant correctement, vous pouvez contrôler l’apparence, la fonctionnalité et l’interaction d’un site web de manière efficace. (ex:href, img)
+
+## Les commentaires 
+
+
+
+Les __commentaires__ en HTML permettent d'insérer des notes ou des explications dans le code sans qu'elles soient affichées dans le navigateur. Ils sont utiles pour ajouter des annotations à votre code, expliquer une partie de la structure, ou désactiver temporairement une section de code sans la supprimer.
+
+
+**Syntaxe** :
+
+```
+<!-- Ceci est un commentaire en HTML -->
+```
