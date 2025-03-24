@@ -44,3 +44,37 @@ __MDN Web Docs__ est une ressource incontournable pour tout développeur web. Sa
 | **HTML** (HyperText Markup Language) | Structure         | Définit la structure et le contenu d'une page web (titres, paragraphes, images, liens...). |
 | **CSS** (Cascading Style Sheets) | Style            | Gère l'apparence visuelle de la page (couleurs, polices, mise en page, animations...). |
 | **JavaScript** | Dynamisme        | Ajoute de l'interactivité et des fonctionnalités avancées (animations, événements, requêtes serveur, etc.). |
+
+
+
+## Comprendre la structure de base HTML et la syntaxe
+
+Explication des Éléments de la Structure :
+
+    <!DOCTYPE html> :
+
+        Cette déclaration informe le navigateur qu'il s'agit d'un document HTML5.
+
+        Elle doit toujours être présente au début du document HTML.
+
+    <html lang="fr"> :
+
+        Balise racine de tout document HTML.
+
+        L'attribut lang="fr" spécifie que la langue du contenu est le français.
+
+    <head> :
+
+        Contient les métadonnées du document (informations non visibles pour l’utilisateur, comme les liens vers des fichiers CSS, des icônes, etc.).
+
+        Les éléments clés à l’intérieur de <head> :
+
+            <meta charset="UTF-8"> : Spécifie le jeu de caractères utilisé pour que les caractères spéciaux s'affichent correctement.
+
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"> : Règle la mise en page pour les appareils mobiles.
+
+            <title> : Définit le titre de la page qui apparaît dans l'onglet du navigateur.
+
+    <body> :
+
+        Contient tout le contenu visible de la page web (textes, images, liens, formulaires, etc.).
