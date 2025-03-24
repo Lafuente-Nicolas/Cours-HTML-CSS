@@ -111,5 +111,8 @@ Un **élément parent** est un élément qui contient d'autres éléments à l'i
 Ici, la balise <div> est l'élément parent, et la balise <p> est l'élément enfant.
 
 Le <div> contient le <p>, ce qui fait du <div> un parent et du <p> un enfant.
+```
 
+## Le HTML5 sémantique
 
+Le HTML5 sémantique permet de rendre les pages web plus compréhensibles et mieux structurées. En utilisant des balises appropriées pour chaque type de contenu, tu crées un document plus accessible, optimisé pour le référencement, et plus facile à maintenir.
