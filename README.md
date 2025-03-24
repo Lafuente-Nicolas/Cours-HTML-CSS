@@ -1,1 +1,1 @@
-# Note-s3
+# Cours de la semaine 3
