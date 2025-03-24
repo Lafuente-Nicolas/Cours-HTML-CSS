@@ -79,13 +79,12 @@ Explication des Éléments de la Structure :
 
         Contient tout le contenu visible de la page web (textes, images, liens, formulaires, etc.).
 
+
 ## Les attributs
 
 Les attributs HTML sont essentiels pour personnaliser et enrichir le comportement des éléments HTML. En comprenant leur utilisation et en les utilisant correctement, vous pouvez contrôler l’apparence, la fonctionnalité et l’interaction d’un site web de manière efficace. (ex:href, img)
 
 ## Les commentaires 
-
-
 
 Les __commentaires__ en HTML permettent d'insérer des notes ou des explications dans le code sans qu'elles soient affichées dans le navigateur. Ils sont utiles pour ajouter des annotations à votre code, expliquer une partie de la structure, ou désactiver temporairement une section de code sans la supprimer.
 
@@ -95,3 +94,22 @@ Les __commentaires__ en HTML permettent d'insérer des notes ou des explications
 ```
 <!-- Ceci est un commentaire en HTML -->
 ```
+
+## Principe de Parent/Enfant en HTML
+
+Un **élément enfant** est un élément qui se trouve à l'intérieur d'un autre élément (le parent). L'enfant peut être un autre élément HTML ou du texte.
+
+Un **élément parent** est un élément qui contient d'autres éléments à l'intérieur de lui. En d'autres termes, un parent est un élément qui **englobe** ou **contient** un ou plusieurs autres éléments.
+
+### Exemple :
+
+```html
+<div>
+    <p>Voici un paragraphe à l'intérieur d'un div.</p>
+</div>
+
+Ici, la balise <div> est l'élément parent, et la balise <p> est l'élément enfant.
+
+Le <div> contient le <p>, ce qui fait du <div> un parent et du <p> un enfant.
+
+
