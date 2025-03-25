@@ -127,3 +127,24 @@ __Important__ :
 
     L'utilisateur peut cocher plusieurs cases en même temps, et la valeur envoyée pour chaque case est le value associé à chaque <input>.
 
+## Insérer une vidéo
+
+### Vidéo youtube
+
+__Étapes__ :
+
+1. Aller sur Youtube
+2. Clique sur __Partager__ et ensuite sur __Intégrer__
+3. Copier le lien 
+
+__exemple__: 
+
+```
+<iframe width="560" height="315" src="lien de la vidéo" frameborder="0" allowfullscreen></iframe>
+```
+
+__width et height__ : Définit la taille de la vidéo (tu peux ajuster ces valeurs).
+
+__frameborder="0"__ : Retire la bordure autour de l'iframe.
+
+__allowfullscreen__ : Permet à l'utilisateur de regarder la vidéo en plein écran.
