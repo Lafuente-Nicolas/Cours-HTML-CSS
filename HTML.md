@@ -127,6 +127,27 @@ __Important__ :
 
     L'utilisateur peut cocher plusieurs cases en même temps, et la valeur envoyée pour chaque case est le value associé à chaque <input>.
 
+__Résumé__ :
+
+__Dropdown__ :
+
+- Permet de choisir une seule option dans une liste déroulante.
+
+- L'utilisateur clique pour afficher les options et choisit une seule option.
+
+__Boutons radio__ :
+
+- Permet de choisir une seule option parmi plusieurs.
+
+- Seul un bouton radio d’un même groupe (name) peut être sélectionné.
+
+__Checkboxes__ :
+
+- Permet de sélectionner plusieurs options.
+
+- L'utilisateur peut cocher plusieurs cases.
+
+
 ## Insérer une vidéo
 
 ### Vidéo youtube
@@ -148,3 +169,4 @@ __width et height__ : Définit la taille de la vidéo (tu peux ajuster ces valeu
 __frameborder="0"__ : Retire la bordure autour de l'iframe.
 
 __allowfullscreen__ : Permet à l'utilisateur de regarder la vidéo en plein écran.
+
