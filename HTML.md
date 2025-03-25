@@ -45,7 +45,7 @@ En HTML, un __input__ est un élément de formulaire qui permet aux utilisateurs
 </form>
 ```
 
-Explication :
+__Explication__ :
 
     <form> : Définit le formulaire.
 
@@ -76,7 +76,7 @@ __Exemple__ :
 </select>
 ```
 
-Explications :
+__Explications__ :
 
     <select> : Crée la liste déroulante.
 
@@ -115,7 +115,7 @@ __Exemple__:
 <input type="checkbox" name="interet" value="lecture"> Lecture
 ```
 
-Explications :
+__Explications__ :
 
     <input type="checkbox"> : Crée une case à cocher.
 
@@ -123,7 +123,7 @@ Explications :
 
     value="sport" : La valeur envoyée lorsque l'utilisateur coche cette case.
 
-Important :
+__Important__ :
 
     L'utilisateur peut cocher plusieurs cases en même temps, et la valeur envoyée pour chaque case est le value associé à chaque <input>.
 
