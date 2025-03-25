@@ -19,3 +19,12 @@ Un tableau en HTML est défini avec la balise __table__. Il contient généralem
         Cellules d'en-tête : <th> (table header, en général dans <thead>)
 
         Cellules de données : <td> (table data, dans <tbody>)
+
+## Les impunts
+
+En HTML, un __input__ est un élément de formulaire qui permet aux utilisateurs de saisir des données (texte, mdp, le nom, etc.). Il est défini avec la balise input (mettre autour de input <>) et peut prendre plusieurs types en fonction de son usage.
+
+```html
+<input type="email" placeholder="Votre email">
+```
+
