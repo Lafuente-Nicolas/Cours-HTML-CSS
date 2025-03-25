@@ -152,6 +152,8 @@ __Checkboxes__ :
 
 ### Vidéo youtube
 
+Pour insérer une vidéo YouTube, on utilise la balise```<iframe>```
+
 __Étapes__ :
 
 1. Aller sur Youtube
@@ -169,4 +171,29 @@ __width et height__ : Définit la taille de la vidéo (tu peux ajuster ces valeu
 __frameborder="0"__ : Retire la bordure autour de l'iframe.
 
 __allowfullscreen__ : Permet à l'utilisateur de regarder la vidéo en plein écran.
+
+### Insérer une vidéo locale
+
+Pour insérer une vidéo locale, on utilise la balise ```<video>```
+
+__Exemple__ :
+```
+<video width="720" height="480" controls>
+    <source src="source-de-la-vidéo.mp4" type="video/mp4">
+    <source src="source-de-la-vidéo.ogg" type="video/ogg">
+    Votre navigateur ne supporte pas la balise vidéo.
+</video>
+```
+__Explications__ :
+
+    <video> : C'est la balise principale pour inclure une vidéo.
+
+        controls : Ajoute des contrôles (play, pause, volume, etc.) pour l'utilisateur.
+
+    <source> : Permet de définir différents formats vidéo pour une meilleure compatibilité avec les navigateurs.
+
+        Ici, tu peux proposer deux formats : .mp4 (très répandu) et .ogg (utile pour les navigateurs ne supportant pas le MP4).
+
+    Texte alternatif : Si le navigateur ne prend pas en charge la balise vidéo, ce texte sera affiché.
+
 
