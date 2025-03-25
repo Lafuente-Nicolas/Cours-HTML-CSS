@@ -57,6 +57,50 @@ Explication :
 
     <label> sert à associer un texte à un champ de formulaire.
 
+## Dropdwowns, Boutons radio, Checkbox
+
+### Dropdown 
+
+Un __dropdown__ est une liste déroulante qui permet à l'utilisateur de choisir une option parmi plusieurs. Il est créé avec les balises select et option (mettre en<>).
+
+Exemple :
+
+
+```
+<label for="pays">Pays :</label>
+<select id="pays" name="pays" required>
+    <option value="">-- Sélectionnez un pays --</option>
+    <option value="france">France</option>
+    <option value="belgique">Belgique</option>
+    <option value="canada">Canada</option>
+</select>
+```
+
+Explications :
+
+    <select> : Crée la liste déroulante.
+
+    <option> : Définit chaque option dans la liste. L’attribut value définit la valeur envoyée lorsque l'utilisateur fait un choix.
+
+    required : Indique que l'utilisateur doit faire un choix avant d'envoyer le formulaire.
+
+### Boutons radio 
+
+Les __boutons radio__ permettent à l'utilisateur de choisir une seule option parmi plusieurs. Ils sont utilisés lorsque __un seul choix__ est permis dans un groupe d'options.
+
+Exemple:
+```
+<label>Genre :</label>
+<input type="radio" name="genre" value="homme" required> Homme
+<input type="radio" name="genre" value="femme"> Femme
+<input type="radio" name="genre" value="autre"> Autre
+```
+
+```
+<input type="radio"> : Crée un bouton radio.
+```
+name="genre" : Tous les boutons radio du même groupe doivent avoir le même nom. Cela garantit que l'utilisateur peut choisir une seule option parmi plusieurs.
+
 
 
 
