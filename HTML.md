@@ -63,7 +63,7 @@ Explication :
 
 Un __dropdown__ est une liste déroulante qui permet à l'utilisateur de choisir une option parmi plusieurs. Il est créé avec les balises select et option (mettre en<>).
 
-Exemple :
+__Exemple__ :
 
 
 ```
@@ -88,7 +88,8 @@ Explications :
 
 Les __boutons radio__ permettent à l'utilisateur de choisir une seule option parmi plusieurs. Ils sont utilisés lorsque __un seul choix__ est permis dans un groupe d'options.
 
-Exemple:
+__Exemple__:
+
 ```
 <label>Genre :</label>
 <input type="radio" name="genre" value="homme" required> Homme
@@ -101,6 +102,28 @@ Exemple:
 ```
 name="genre" : Tous les boutons radio du même groupe doivent avoir le même nom. Cela garantit que l'utilisateur peut choisir une seule option parmi plusieurs.
 
+### Checkbox
 
+Les __checkboxes__ permettent à l'utilisateur de sélectionner __plusieurs options__ parmi plusieurs. Contrairement aux boutons radio, plusieurs cases peuvent être sélectionnées à la fois.
 
+__Exemple__:
+
+```
+<label>Centres d'intérêt :</label>
+<input type="checkbox" name="interet" value="sport"> Sport
+<input type="checkbox" name="interet" value="musique"> Musique
+<input type="checkbox" name="interet" value="lecture"> Lecture
+```
+
+Explications :
+
+    <input type="checkbox"> : Crée une case à cocher.
+
+    name="interet" : Le nom peut être le même pour plusieurs cases à cocher, ce qui permet de les envoyer ensemble dans les données du formulaire.
+
+    value="sport" : La valeur envoyée lorsque l'utilisateur coche cette case.
+
+Important :
+
+    L'utilisateur peut cocher plusieurs cases en même temps, et la valeur envoyée pour chaque case est le value associé à chaque <input>.
 
