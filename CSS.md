@@ -162,3 +162,41 @@ Exemple :
 
 ⚠ Bonne pratique : Utiliser les classes (.) pour le styling et les IDs (#) uniquement pour des interactions avec JavaScript ou des ancres HTML.
 
+### 3. Sélecteurs d'éléments (ou de balises)
+
+Les sélecteurs d'éléments ciblent directement une balise HTML sans utiliser de classe ou d’ID.
+Exemple :
+```css
+p {
+    color: blue;
+}
+```
+
+__Ce style s'applique à tous les ```<p>``` de la page.__
+
+✔ Utilité : Rapide et simple à appliquer à tous les éléments d’un même type.
+
+❌ Inconvénient : Pas assez spécifique si on veut styliser certains éléments seulement.
+
+### 4. Pseudo-classes (:)
+
+Les pseudo-classes permettent de sélectionner un état particulier d’un élément sans modifier le HTML.
+Exemples courants :
+```css
+a:hover {
+    color: red;
+} 
+```
+```
+    :hover → S'applique quand la souris survole un élément.
+
+    :focus → Quand un champ de formulaire est sélectionné.
+
+    :nth-child(odd) → Sélectionne les enfants impairs d'un parent.
+
+    :first-child → Sélectionne le premier enfant d'un élément parent.
+```
+
+✔ Utilité : Permet d’ajouter des interactions et effets dynamiques.
+
+❌ Inconvénient : Dépend du comportement de l’utilisateur
