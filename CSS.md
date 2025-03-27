@@ -200,3 +200,45 @@ a:hover {
 ✔ Utilité : Permet d’ajouter des interactions et effets dynamiques.
 
 ❌ Inconvénient : Dépend du comportement de l’utilisateur
+
+### 5. Pseudo-éléments (::)
+
+Les pseudo-éléments permettent de styliser une partie spécifique d'un élément.
+
+Exemples :
+
+```css
+p::first-letter {
+    font-size: 2em;
+    color: red;
+}
+```
+Cela stylise uniquement la première lettre de chaque <p>.
+
+```css
+p::before {
+    content: "🔥 ";
+}
+```
+Cela ajoute un emoji 🔥 avant chaque <p>.
+
+✔ Utilité : Ajouter des styles avancés sans modifier le HTML.
+
+❌ Inconvénient : Moins compatible sur les anciens navigateurs.
+
+### 6. Le Sélecteur Universel (*)
+
+Le sélecteur universel (*) cible tous les éléments d'une page.
+Exemple :
+```css
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+```
+Cela permet souvent de réinitialiser les styles par défaut.
+
+✔ Utilité : Utile pour des reset CSS globaux.
+
+❌ Inconvénient : Peut affecter tous les éléments, donc doit être utilisé avec précaution.
