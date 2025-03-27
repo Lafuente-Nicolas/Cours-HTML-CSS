@@ -242,3 +242,12 @@ Cela permet souvent de réinitialiser les styles par défaut.
 ✔ Utilité : Utile pour des reset CSS globaux.
 
 ❌ Inconvénient : Peut affecter tous les éléments, donc doit être utilisé avec précaution.
+
+| **Type de Sélecteur**  | **Syntaxe** | **Description** | **Exemple** |
+|----------------------|-------------|-----------------|-------------|
+| **Classe** | `.nom-classe` | Réutilisable, appliqué à plusieurs éléments | `.important { color: red; }` |
+| **ID** | `#nom-id` | Unique, appliqué à un seul élément | `#main-title { text-align: center; }` |
+| **Élément** | `balise` | Appliqué à toutes les occurrences de l'élément | `p { font-size: 16px; }` |
+| **Pseudo-classe** | `:nom` | Sélectionne un état spécifique d'un élément | `a:hover { color: blue; }` |
+| **Pseudo-élément** | `::nom` | Cible une partie spécifique d'un élément | `p::first-letter { color: red; }` |
+| **Sélecteur Universel** | `*` | Sélectionne **tous** les éléments | `* { margin: 0; }` |
