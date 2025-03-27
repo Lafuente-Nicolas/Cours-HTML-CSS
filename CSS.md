@@ -251,3 +251,32 @@ Cela permet souvent de réinitialiser les styles par défaut.
 | **Pseudo-classe** | `:nom` | Sélectionne un état spécifique d'un élément | `a:hover { color: blue; }` |
 | **Pseudo-élément** | `::nom` | Cible une partie spécifique d'un élément | `p::first-letter { color: red; }` |
 | **Sélecteur Universel** | `*` | Sélectionne **tous** les éléments | `* { margin: 0; }` |
+
+## Le box model
+
+![Shéma du box model](https://www.devenir-webmaster.com/tuto/html-css/le-modele-de-boite/img/le-modele-de-boite.gif)
+
+- __Le Contenu (content)__ : L’intérieur de la boîte où le texte ou les images apparaissent.
+
+- __Le Remplissage (padding)__ : L’espace entre le contenu et la bordure.
+
+- __La Bordure (border)__ : L’encadrement autour du contenu et du padding.
+
+- __La Marge (margin)__ : L’espace extérieur qui sépare l’élément des autres éléments.
+
+le Box Model est essentiel pour :
+
+- Maîtriser l’espace entre les éléments.
+
+- Aligner correctement les éléments sur une page.
+
+- Éviter les bugs d’affichage causés par des tailles qui dépassent.
+
+En résumé : 
+
+✅ Tous les éléments HTML sont des boîtes.
+
+✅ Ces boîtes suivent une structure (content, padding, border, margin).
+
+✅ box-sizing: border-box; permet de mieux gérer la taille des éléments.
+
