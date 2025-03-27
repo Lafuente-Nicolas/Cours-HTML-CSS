@@ -110,3 +110,11 @@ h1 {
 }
 ```
 Dans cet exemple, le fichier main.css importe le fichier style.css, et le style contenu dans ce dernier s'appliquera à la page web. Cependant, l'utilisation de @import peut affecter la performance du chargement de la page, car les fichiers sont chargés séquentiellement.
+
+
+| Méthode              | Description | Cas d’utilisation |
+|----------------------|-------------|-------------------|
+| **Inline CSS**        | Styles ajoutés directement dans l'élément via l'attribut `style`. | Petits changements rapides à un seul élément. |
+| **Internal CSS**      | Styles ajoutés dans la balise `<style>` dans l’en-tête de la page HTML. | Utilisé pour des pages simples ou un projet spécifique. |
+| **External CSS**      | Styles définis dans un fichier séparé et reliés via `<link>`. | Idéal pour des projets à grande échelle et réutilisables. |
+| **`@import`**         | Permet d'importer un fichier CSS dans un autre fichier CSS. | Organiser et modulariser les styles dans de nombreux fichiers. |
