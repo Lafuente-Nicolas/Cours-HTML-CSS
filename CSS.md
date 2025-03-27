@@ -280,3 +280,34 @@ En résumé :
 
 ✅ box-sizing: border-box; permet de mieux gérer la taille des éléments.
 
+## Le positionnement en CSS
+
+Le positionnement en CSS permet de contrôler l’endroit où un élément apparaît sur la page. 
+
+__Il existe 5 types de positionnement principaux:__
+
+### 1. Position static (par défaut):
+
+- Comportement : Les éléments apparaissent dans l’ordre du flux normal du document.
+
+-  Quand l’utiliser ? : C’est le comportement par défaut, pas besoin de le spécifier.
+```css
+.box {
+    position: static; /* Par défaut */
+}
+```
+ Effet : L’élément reste empilé normalement les uns en dessous des autres.
+
+ ### 2. Position relative
+
+- Comportement : L’élément reste dans le flux normal mais peut être déplacé avec top, bottom, left, right.
+-  Quand l’utiliser ? : Pour décaler légèrement un élément tout en conservant son espace d’origine.
+```css
+.box {
+    position: relative;
+    top: 20px; /* Descend de 20px */
+    left: 10px; /* Se décale vers la droite de 10px */
+}
+```
+Effet : L’élément est décalé, mais son espace d’origine reste vide.
+
