@@ -18,7 +18,7 @@ Voici quelques propriétés courantes :
 
 ### Il est existe 4 manières:
 
-1. __CSS en ligne (inline CSS)__ : 
+#### 1. __CSS en ligne (inline CSS)__ : 
 
 Le CSS en ligne consiste à appliquer des styles directement dans l'élément HTML via l'attribut style. Cela permet de cibler un seul élément spécifique sur la page.
 
@@ -33,7 +33,7 @@ Quand l'utiliser ?
 ```
 Dans cet exemple, l'élément ```<p>``` aura une couleur rouge et une taille de police de 20px.
 
-2. __CSS interne (internal CSS)__:
+#### 2. __CSS interne (internal CSS)__:
 
 Le CSS interne consiste à inclure les styles directement dans le document HTML à l'intérieur de la balise ```<style>```, qui se trouve dans l'en-tête ```<head>``` du fichier HTML. Cette méthode est idéale si tu souhaites appliquer des styles à une seule page web.
 
@@ -68,3 +68,45 @@ Ici, les styles définis dans la balise ```<style>``` s'appliquent à toute la p
 
 -  Le titre ```<h1>``` sera en vert.
 
+#### 3. __CSS externe (external CSS)__ :
+
+
+Le __CSS externe__ consiste à placer les styles dans un fichier séparé, puis à lier ce fichier CSS à la page HTML avec la balise ```<link>``` dans l'en-tête. Cette méthode est la plus courante, surtout pour des projets plus complexes, car elle permet de séparer la structure du contenu (HTML) et la présentation (CSS).
+
+Quand l'utiliser ?
+
+   - Pour des projets de grande envergure où tu veux appliquer les mêmes styles à plusieurs pages.
+
+- Cela permet de garder le code HTML propre et facile à maintenir.
+
+```Css
+<link rel="stylesheet" href="style.css">
+```
+#### 4. __CSS via @import dans une feuille de style__: 
+
+
+La règle ```@import``` est utilisée dans un fichier CSS pour importer un autre fichier CSS. Cela permet de diviser les styles en plusieurs fichiers CSS et de les organiser de manière plus logique.
+
+Quand l'utiliser ?
+
+- Lorsque tu veux organiser ton CSS en plusieurs fichiers.
+
+- Utile si tu veux importer des feuilles de style communes dans d'autres feuilles de style.
+
+Exemple :
+
+- Fichier CSS principal (main.css) : 
+```
+@import url('style.css');
+
+body {
+    font-family: Arial, sans-serif;
+}
+```
+- Fichier CSS importé (style.css):
+```
+h1 {
+    color: red;
+}
+```
+Dans cet exemple, le fichier main.css importe le fichier style.css, et le style contenu dans ce dernier s'appliquera à la page web. Cependant, l'utilisation de @import peut affecter la performance du chargement de la page, car les fichiers sont chargés séquentiellement.
