@@ -16,7 +16,7 @@ Voici quelques propriétés courantes :
 ```
 ## Insérer le CSS dans le HTML
 
-### Il est existe 4 manières:
+### Il existe 4 manières:
 
 #### 1. __CSS en ligne (inline CSS)__ : 
 
@@ -79,7 +79,7 @@ Quand l'utiliser ?
 
 - Cela permet de garder le code HTML propre et facile à maintenir.
 
-```Css
+```css
 <link rel="stylesheet" href="style.css">
 ```
 #### 4. __CSS via @import dans une feuille de style__: 
@@ -96,7 +96,7 @@ Quand l'utiliser ?
 Exemple :
 
 - Fichier CSS principal (main.css) : 
-```
+```css
 @import url('style.css');
 
 body {
@@ -104,7 +104,7 @@ body {
 }
 ```
 - Fichier CSS importé (style.css):
-```
+```css
 h1 {
     color: red;
 }
@@ -118,3 +118,26 @@ Dans cet exemple, le fichier main.css importe le fichier style.css, et le style 
 | **Internal CSS**      | Styles ajoutés dans la balise `<style>` dans l’en-tête de la page HTML. | Utilisé pour des pages simples ou un projet spécifique. |
 | **External CSS**      | Styles définis dans un fichier séparé et reliés via `<link>`. | Idéal pour des projets à grande échelle et réutilisables. |
 | **`@import`**         | Permet d'importer un fichier CSS dans un autre fichier CSS. | Organiser et modulariser les styles dans de nombreux fichiers. |
+
+## classes, pseudo-classes, éléments, pseudo-éléments, IDs et le selecteur universel
+
+
+
+### 1. Classes (.) :
+
+Les classes permettent d'appliquer un même style à plusieurs éléments. Elles sont définies avec un . suivi du nom de la classe.
+Exemple :
+```
+<p class="important">Texte important</p>
+<p class="important">Autre texte important</p>
+```
+```css
+.important {
+    color: red;
+    font-weight: bold;
+}
+```
+
+✔ Utilité : Réutilisation du style sur plusieurs éléments.
+
+❌ Inconvénient : Ne doit pas être utilisée pour des éléments uniques (préférer id dans ce cas).
