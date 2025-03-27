@@ -126,6 +126,7 @@ Dans cet exemple, le fichier main.css importe le fichier style.css, et le style 
 ### 1. Classes (.) :
 
 Les classes permettent d'appliquer un même style à plusieurs éléments. Elles sont définies avec un . suivi du nom de la classe.
+
 Exemple :
 ```
 <p class="important">Texte important</p>
@@ -141,3 +142,23 @@ Exemple :
 ✔ Utilité : Réutilisation du style sur plusieurs éléments.
 
 ❌ Inconvénient : Ne doit pas être utilisée pour des éléments uniques (préférer id dans ce cas).
+
+### 2. IDs (#)
+
+Les IDs sont uniques et doivent être utilisés pour un seul élément par page. Ils sont définis avec # suivi du nom de l'ID.
+Exemple :
+```html
+<h1 id="main-title">Titre Principal</h1>
+```
+```css
+#main-title {
+    font-size: 24px;
+    text-align: center;
+}
+```
+✔ Utilité : Identifier un élément unique pour lui appliquer un style spécifique.
+
+❌ Inconvénient : Non réutilisable et moins flexible que les classes.
+
+⚠ Bonne pratique : Utiliser les classes (.) pour le styling et les IDs (#) uniquement pour des interactions avec JavaScript ou des ancres HTML.
+
