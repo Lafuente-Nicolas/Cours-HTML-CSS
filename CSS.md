@@ -311,3 +311,12 @@ __Il existe 5 types de positionnement principaux:__
 ```
 Effet : L’élément est décalé, mais son espace d’origine reste vide.
 
+| Position   | Effet |
+|------------|----------------------------------------------------------------|
+| **static**  | Position normale (par défaut), l'élément suit le flux du document. |
+| **relative** | L'élément peut être déplacé par rapport à sa position normale. |
+| **absolute** | L'élément est retiré du flux normal et se positionne par rapport à son premier parent avec `position: relative;`. |
+| **fixed**    | L'élément est fixé par rapport à la fenêtre du navigateur et ne bouge pas en scrollant. |
+| **sticky**   | L'élément agit comme `relative` au départ, puis devient `fixed` en scrollant. |
+
+
