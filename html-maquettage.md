@@ -117,6 +117,31 @@ Le <div> contient le <p>, ce qui fait du <div> un parent et du <p> un enfant.
 
 Le HTML5 sémantique permet de rendre les pages web plus compréhensibles et mieux structurées. En utilisant des balises appropriées pour chaque type de contenu, tu crées un document plus accessible, optimisé pour le référencement, et plus facile à maintenir.
 
+```html 
+<header> : Déclare l'en-tête d'une page ou d'une section.
+
+<nav> : Contient les liens de navigation de la page.
+
+<main> : Déclare le contenu principal de la page, souvent unique.
+
+<section> : Utilisée pour une section spécifique de contenu, souvent avec un titre.
+
+<article> : Représente un article indépendant qui pourrait être distribué ou réutilisé (comme un blog, un post, etc.).
+
+<aside> : Représente du contenu périphérique, qui peut être mis de côté par rapport au contenu principal (comme une barre latérale).
+
+<footer> : Déclare le pied de page, généralement pour les informations de contact ou les liens de copyright.
+
+<figure> : Utilisée pour inclure du contenu multimédia (images, vidéos, graphiques, etc.) avec une légende.
+
+<figcaption> : Légende ou description pour un élément <figure>.
+
+<address> : Contient des informations de contact pour l'auteur ou la source d'un document.
+
+<mark> : Met en surbrillance une portion de texte, souvent utilisée pour indiquer une recherche ou une sélection.
+
+<progress> : Affiche une barre de progression (souvent pour les téléchargements ou les actions en cours).
+```
 ## la différence entre les liens relatifs et liens absolus
 
 les liens relatifs sont utilisés pour les pages du même site ou projet, et les liens absolus sont nécessaires lorsqu’on fait référence à des ressources externes ou quand on veut garantir que le lien fonctionne peu importe la structure interne.
