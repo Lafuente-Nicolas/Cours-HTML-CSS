@@ -473,3 +473,17 @@ Ajoutez cette ligne dans votre CSS :
 ```css
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
 ```
+## la notion de cascade en CSS
+
+En CSS, la cascade est un concept fondamental qui détermine quelle règle CSS s'applique lorsqu'il y a plusieurs déclarations qui ciblent le même élément. La cascade suit un ensemble de règles de priorité qui permettent de trancher en cas de conflit.
+
+| Principe                     | Description                                                                 | Exemple                                       |
+|------------------------------|-----------------------------------------------------------------------------|-----------------------------------------------|
+| **L’origine des styles**      | Détermine d'où vient la règle CSS : navigateur, feuille CSS de l'utilisateur, CSS de l'auteur (vous). | Les styles du navigateur sont par défaut (`<h1>` en gras). |
+| **La spécificité des sélecteurs** | Plus un sélecteur est précis, plus il a de poids.                        | `#id` > `.classe` > `balise`                 |
+| **L’ordre d’apparition**      | En cas d’égalité, la dernière règle déclarée l’emporte.                    | Si deux règles ont la même spécificité, celle qui vient en dernier s’applique. |
+
+- La cascade permet de gérer les conflits entre plusieurs règles CSS.
+- La spécificité joue un rôle clé pour déterminer quelle règle s’applique.
+- L’ordre d’apparition influence le style si les règles ont la même spécificité.
+- !important peut écraser toutes les règles, mais doit être utilisé avec précaution.
