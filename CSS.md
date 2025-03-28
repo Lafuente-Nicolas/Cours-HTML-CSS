@@ -463,4 +463,13 @@ body {
 
  Inconvénient : Augmente le poids du site si la police est trop lourde.
 
- 
+ ### Importer une police via un CDN
+
+ Certaines polices sont hébergées sur des CDNs (Content Delivery Network), ce qui évite de stocker le fichier localement.
+
+ Exemple avec Fontsource (équivalent à Google Fonts en local) :
+
+Ajoutez cette ligne dans votre CSS :
+```css
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
+```
