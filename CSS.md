@@ -365,5 +365,35 @@ Effet : L’élément reste en haut de la page lorsqu'on scrolle.
 | **fixed**    | L'élément est fixé par rapport à la fenêtre du navigateur et ne bouge pas en scrollant. |
 | **sticky**   | L'élément agit comme `relative` au départ, puis devient `fixed` en scrollant. |
 
+## La spécificité en css
 
+La spécificité CSS permet de savoir quelle règle CSS s'applique lorsqu'il y a des conflits entre plusieurs styles. C’est un système de points qui donne plus d’importance à certaines règles qu’à d’autres.
 
+### Règles de base de la spécificité
+
+- L’ordre d’application → Si deux règles ont la même spécificité, la dernière écrite (plus bas dans le CSS) est appliquée.
+
+- Les sélecteurs les plus précis sont prioritaires sur les sélecteurs plus généraux.
+
+-  !important > Inline styles > ID > Classe / Attributs / Pseudo-classes > Éléments
+
+### Pourquoi cet ordre ?
+
+- Plus un sélecteur est précis et ciblé, plus il a de poids.
+- Un ID est unique, une classe est réutilisable, un élément est générique.
+- Le style en ligne est appliqué directement, donc il est prioritaire.
+- Le sélecteur universel (*) est trop large, donc il n'a aucun poids.
+
+### L’ordre exact de spécificité CSS est :
+
+- !important (priorité absolue, mais ne fait pas partie du calcul de la spécificité).
+
+- Style en ligne (style="") → 1000 points
+
+- ID (#monID) → 100 points
+
+- Classes, attributs et pseudo-classes (.maClasse, [type="text"], :hover) → 10 points
+
+- Éléments et pseudo-éléments (div, p, h1, ::before) → 1 point
+
+- Sélecteur universel (*) → 0 point (aucune spécificité)
