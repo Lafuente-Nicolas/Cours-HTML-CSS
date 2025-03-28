@@ -365,59 +365,12 @@ Effet : L’élément reste en haut de la page lorsqu'on scrolle.
 | **fixed**    | L'élément est fixé par rapport à la fenêtre du navigateur et ne bouge pas en scrollant. |
 | **sticky**   | L'élément agit comme `relative` au départ, puis devient `fixed` en scrollant. |
 
+## La spécificité en CSS
 
-### 3.Position absolute
+### Règles de base de la spécificité:
 
-- Comportement : L’élément quitte le flux normal et est positionné par rapport à son ancêtre position: relative; le plus proche (sinon, c'est le ```<html>``` qui sert de référence).
+- L’ordre d’application → Si deux règles ont la même spécificité, la dernière écrite (plus bas dans le CSS) est appliquée.
 
-- Quand l’utiliser ? : Pour placer précisément un élément sans affecter les autres.
-```css
-.container {
-    position: relative; /* Référence */
-}
+- Les sélecteurs les plus précis sont prioritaires sur les sélecteurs plus généraux.
 
-.box {
-    position: absolute;
-    top: 20px; /* 20px du haut du .container */
-    right: 50px; /* 50px de la droite du .container */
-}
-```
- Effet : L’élément se place exactement par rapport à .container, sans impacter les autres.
-
- ### 4.Position fixed
-
-- Comportement : L’élément est fixé par rapport à la fenêtre du navigateur.
-
-- Quand l’utiliser ? : Pour créer des menus fixes ou des boutons "Retour en haut".
-```css
-.box {
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-}
-```
-
- Effet : L’élément reste visible même en scrollant.
-
-### 5. Position sticky
-
-- Comportement : L’élément est comme relative au départ, puis devient fixed lorsqu’on scroll.
-- Quand l’utiliser ? : Pour un menu collant qui reste visible quand on fait défiler.
-
-```css
-.box {
-    position: sticky;
-    top: 0; /* Reste collé en haut */
-    background-color: yellow;
-}
-```
-Effet : L’élément reste en haut de la page lorsqu'on scrolle.
-
-| Position   | Effet |
-|------------|----------------------------------------------------------------|
-| **static**  | Position normale (par défaut), l'élément suit le flux du document. |
-| **relative** | L'élément peut être déplacé par rapport à sa position normale. |
-| **absolute** | L'élément est retiré du flux normal et se positionne par rapport à son premier parent avec `position: relative;`. |
-| **fixed**    | L'élément est fixé par rapport à la fenêtre du navigateur et ne bouge pas en scrollant. |
-| **sticky**   | L'élément agit comme `relative` au départ, puis devient `fixed` en scrollant. |
-
+- !important > Inline styles > ID > Classe / Attributs / Pseudo-classes > Éléments
