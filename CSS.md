@@ -487,3 +487,23 @@ En CSS, la cascade est un concept fondamental qui détermine quelle règle CSS s
 - La spécificité joue un rôle clé pour déterminer quelle règle s’applique.
 - L’ordre d’apparition influence le style si les règles ont la même spécificité.
 - !important peut écraser toutes les règles, mais doit être utilisé avec précaution.
+
+## L'heritage 
+
+L'héritage en CSS est le mécanisme qui permet aux éléments enfants de récupérer automatiquement certaines propriétés définies pour leur parent, notamment les styles liés au texte comme `color` et `font-family`. Il peut être forcé avec `inherit` ou annulé avec `initial` et `unset`.
+
+| Mot-clé    | Comportement |
+|------------|-------------|
+| **`inherit`** | Fait hériter la valeur du parent, même si la propriété ne s'hérite pas naturellement. |
+| **`initial`** | Réinitialise la propriété à sa **valeur par défaut** du navigateur. |
+| **`unset`** | Se comporte comme `inherit` pour les propriétés héritables, et comme `initial` pour les autres. |
+
+
+| Concept | Définition | Exemple |
+|---------|------------|---------|
+| Héritage | Les enfants récupèrent certaines propriétés du parent (ex: `color`, `font-family`). | `<p>` hérite la couleur définie dans `<body>`. |
+| Cascade | Priorité entre plusieurs styles en fonction de leur spécificité et ordre d'apparition. | Un `h1` rouge peut être écrasé par un `h1 { color: blue; }` ajouté après. |
+
+- L'héritage s'applique surtout aux propriétés textuelles (comme color).
+- On peut forcer l’héritage avec inherit, ou le bloquer avec initial.
+- L'héritage simplifie le CSS, mais doit être compris pour éviter les erreurs.
