@@ -397,3 +397,18 @@ La spécificité CSS permet de savoir quelle règle CSS s'applique lorsqu'il y a
 - Éléments et pseudo-éléments (div, p, h1, ::before) → 1 point
 
 - Sélecteur universel (*) → 0 point (aucune spécificité)
+
+
+## Manipuler les polices 
+
+
+| Propriété      | Description                                      | Exemple                                      |
+|----------------|--------------------------------------------------|----------------------------------------------|
+| `font-family`  | Définit la police à utiliser.                    | `font-family: "Arial", sans-serif;`          |
+| `font-size`    | Définit la taille de la police.                  | `font-size: 16px;`                           |
+| `font-weight`  | Définit l'épaisseur du texte.                    | `font-weight: bold;`                         |
+| `font-style`   | Définit le style de la police (normal, italique).| `font-style: italic;`                        |
+| `line-height`  | Définit l'espacement entre les lignes de texte.  | `line-height: 1.5;`                          |
+| `letter-spacing`| Définit l'espacement entre les lettres.         | `letter-spacing: 2px;`                       |
+| `@font-face`   | Permet d'importer une police externe.            | `@font-face { font-family: 'MaPolice'; src: url('chemin'); }` |
+| `font-variant` | Permet d'utiliser des variantes typographiques.  | `font-variant: small-caps;`                  |
