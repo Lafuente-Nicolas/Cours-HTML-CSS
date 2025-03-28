@@ -310,6 +310,52 @@ __Il existe 5 types de positionnement principaux:__
 }
 ```
 Effet : L’élément est décalé, mais son espace d’origine reste vide.
+### 3.Position absolute
+
+- Comportement : L’élément quitte le flux normal et est positionné par rapport à son ancêtre position: relative; le plus proche (sinon, c'est le ```<html>``` qui sert de référence).
+
+- Quand l’utiliser ? : Pour placer précisément un élément sans affecter les autres.
+```css
+.container {
+    position: relative; /* Référence */
+}
+
+.box {
+    position: absolute;
+    top: 20px; /* 20px du haut du .container */
+    right: 50px; /* 50px de la droite du .container */
+}
+```
+ Effet : L’élément se place exactement par rapport à .container, sans impacter les autres.
+
+ ### 4.Position fixed
+
+- Comportement : L’élément est fixé par rapport à la fenêtre du navigateur.
+
+- Quand l’utiliser ? : Pour créer des menus fixes ou des boutons "Retour en haut".
+```css
+.box {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+```
+
+ Effet : L’élément reste visible même en scrollant.
+
+### 5. Position sticky
+
+- Comportement : L’élément est comme relative au départ, puis devient fixed lorsqu’on scroll.
+- Quand l’utiliser ? : Pour un menu collant qui reste visible quand on fait défiler.
+
+```css
+.box {
+    position: sticky;
+    top: 0; /* Reste collé en haut */
+    background-color: yellow;
+}
+```
+Effet : L’élément reste en haut de la page lorsqu'on scrolle.
 
 | Position   | Effet |
 |------------|----------------------------------------------------------------|
