@@ -412,3 +412,55 @@ La spécificité CSS permet de savoir quelle règle CSS s'applique lorsqu'il y a
 | `letter-spacing`| Définit l'espacement entre les lettres.         | `letter-spacing: 2px;`                       |
 | `@font-face`   | Permet d'importer une police externe.            | `@font-face { font-family: 'MaPolice'; src: url('chemin'); }` |
 | `font-variant` | Permet d'utiliser des variantes typographiques.  | `font-variant: small-caps;`                  |
+
+## Google fonts
+
+Google Fonts est un service qui permet d'intégrer facilement des polices web gratuites et ouvertes dans des projets.
+
+## Intégrer des polices extérieurs 
+
+### importer une police depuis Google Fonts
+C'est la méthode la plus facile. Elle consiste à importer une police __depuis Google Fonts__ en ajoutant un lien dans le ```<head>``` du fichier HTML.
+
+Étapes :
+
+- Aller sur Google Fonts.
+
+- Choisir une police et copier le lien fourni.
+
+- L’ajouter dans le ```<head>``` du fichier HTML.
+
+### @font-face pour importer une police personnalisée
+
+Si vous avez un fichier de __police (.woff, .woff2, .ttf)__, vous pouvez l’intégrer avec __@font-face__.
+
+Étapes :
+
+- Télécharger la police et placer les fichiers dans votre projet.
+
+- Déclarer la police avec @font-face en CSS.
+
+- Utiliser la police dans les styles.
+
+  Exemple :
+
+Si la police est MaPolice.woff2 et est stockée dans un dossier fonts/ :
+```css
+@font-face {
+  font-family: 'MaPolice';
+  src: url('fonts/MaPolice.woff2') format('woff2'),
+       url('fonts/MaPolice.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'MaPolice', sans-serif;
+}
+```
+
+ Avantages : Fonctionne sans dépendre d'un service externe.
+
+ Inconvénient : Augmente le poids du site si la police est trop lourde.
+
+ 
