@@ -603,3 +603,37 @@ Utilisez `grid-template-columns` et `grid-template-rows` :
 ```
 
 ---
+
+## 3. Positionner les éléments
+
+Par défaut, les éléments se placent automatiquement. Mais vous pouvez les positionner précisément avec `grid-column` et `grid-row` :
+
+```css
+.item {
+  grid-column: 1 / 3; /* Occupe de la colonne 1 à 3 */
+  grid-row: 1 / 2; /* Occupe la première ligne */
+}
+```
+
+Ou plus simplement :
+
+```css
+.item {
+  grid-column: span 2; /* Occupe 2 colonnes */
+}
+```
+
+---
+
+## 4. Espacement et alignement
+
+###  a) Espacer les éléments
+Utilisez `gap` pour ajouter un espace entre les cellules :
+
+```css
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px; /* 10px d’espace entre les éléments */
+}
+```
