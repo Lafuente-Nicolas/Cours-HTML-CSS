@@ -561,3 +561,45 @@ __baseline__ ➝ Aligne sur la ligne de base du texte.
 
 ![Image du flex-wrap](flew-wrap.png)
 
+# 🎯 Introduction à CSS Grid
+
+**CSS Grid** est un système de mise en page en deux dimensions qui permet d'organiser des éléments sous forme de grille, avec des colonnes et des lignes.
+
+##  1. Activer CSS Grid
+Pour utiliser **CSS Grid**, appliquez `display: grid;` à un conteneur :  
+
+```css
+.container {
+  display: grid;
+}
+```
+
+Tout élément **enfant** de ce conteneur sera positionné dans la grille.
+
+---
+
+## 📏 2. Définir une grille
+
+###  a) Définir les colonnes et les lignes
+Utilisez `grid-template-columns` et `grid-template-rows` :  
+
+```css
+.container {
+  display: grid;
+  grid-template-columns: 100px 200px 100px; /* 3 colonnes */
+  grid-template-rows: 150px 150px; /* 2 lignes */
+}
+```
+
+- Ici, la grille a **3 colonnes** (100px, 200px, 100px) et **2 lignes** (150px, 150px).
+
+📌 **Astuce :** Utilisez `fr` (fraction) pour un partage équitable de l’espace :  
+
+```css
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr; /* La 2e colonne est deux fois plus large */
+}
+```
+
+---
