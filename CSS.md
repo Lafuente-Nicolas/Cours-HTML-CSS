@@ -511,3 +511,48 @@ L'héritage en CSS est le mécanisme qui permet aux éléments enfants de récup
 ## Flexox
 
 Flexbox (Flexible Box) est un modèle de mise en page CSS qui facilite l'alignement et la distribution des éléments dans un conteneur, même si la taille des éléments est inconnue ou dynamique. Il est particulièrement utile pour créer des mises en page réactives.
+
+### Activer Flexbox
+
+Pour utiliser Flexbox, on applique `display: flex;` sur un élément parent.
+
+### Aligner les éléments
+
+🔸 Sur l'axe principal `justify-content`
+
+Gère __l’alignement horizontal__ des éléments.
+```css
+.container {
+  justify-content: center; /* Centre les boîtes */
+}
+```
+
+Autres valeurs utiles :
+
+__flex-start__ ➝ Aligné à gauche.
+
+__flex-end__ ➝ Aligné à droite.
+
+__space-between__ ➝ Espacement maximal.
+
+__space-around__ ➝ Espacement équilibré.
+
+__space-evenly__ ➝ Espacement uniforme.
+
+### align-items
+
+Gère __l’alignement vertical__ des éléments.
+```css
+.container {
+  align-items: center; /* Centre verticalement */
+}
+```
+Autres valeurs utiles :
+
+__flex-start__ ➝ Aligné en haut.
+
+__flex-end__ ➝ Aligné en bas.
+
+__stretch__ ➝ Étire les éléments.
+
+__baseline__ ➝ Aligne sur la ligne de base du texte.
