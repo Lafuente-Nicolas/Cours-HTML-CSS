@@ -637,3 +637,37 @@ Utilisez `gap` pour ajouter un espace entre les cellules :
   gap: 10px; /* 10px d’espace entre les éléments */
 }
 ```
+
+### b) Aligner les éléments
+Vous pouvez aligner les éléments dans leur cellule avec :  
+
+- `justify-items` : horizontalement (`start`, `center`, `end`, `stretch`)
+- `align-items` : verticalement  
+- `place-items` : combine les deux  
+
+Exemple :
+
+```css
+.container {
+  justify-items: center;
+  align-items: center;
+}
+```
+
+Pour **aligner tout le conteneur** :
+
+```css
+.container {
+  justify-content: center;
+  align-content: center;
+}
+```
+
+
+## Grid vs flexbox
+
+| **Grid** | **Flexbox** |
+|----------|------------|
+| 2D (lignes + colonnes) | 1D (soit lignes, soit colonnes) |
+| Idéal pour les mises en page complètes | Idéal pour aligner des éléments sur une seule ligne |
+| Positionnement précis | Disposition plus fluide |
