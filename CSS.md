@@ -556,3 +556,8 @@ __flex-end__ ➝ Aligné en bas.
 __stretch__ ➝ Étire les éléments.
 
 __baseline__ ➝ Aligne sur la ligne de base du texte.
+
+![Image du flexbox](flexbox.jpg)
+
+![Image du flex-wrap](flew-wrap.png)
+
