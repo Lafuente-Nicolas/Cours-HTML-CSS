@@ -508,7 +508,7 @@ L'héritage en CSS est le mécanisme qui permet aux éléments enfants de récup
 - On peut forcer l’héritage avec inherit, ou le bloquer avec initial.
 - L'héritage simplifie le CSS, mais doit être compris pour éviter les erreurs.
 
-## Flexox
+## Flexbox
 
 Flexbox (Flexible Box) est un modèle de mise en page CSS qui facilite l'alignement et la distribution des éléments dans un conteneur, même si la taille des éléments est inconnue ou dynamique. Il est particulièrement utile pour créer des mises en page réactives.
 
