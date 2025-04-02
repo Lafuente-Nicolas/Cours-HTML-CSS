@@ -1,5 +1,32 @@
 # CSS 
 
+# 📚 **Table des matières**
+
+---
+
+**[La structure du CSS](#la-structure-du-css)**  
+**[Insérer le CSS dans le HTML](#insérer-le-css-dans-le-html)**   
+**[Classes, IDs et sélecteurs](#classes-pseudo-classes-éléments-pseudo-elements-ids-et-le-sélecteur-universel)**  
+**[Le Box Model](#le-box-model)**  
+**[Le Positionnement en CSS](#le-positionnement-en-css)**  
+**[La Spécificité en CSS](#la-spécificité-en-css)**  
+**[Manipuler les Polices](#manipuler-les-polices)**  
+**[Google Fonts et Polices Externes](#google-fonts)**  
+
+---
+
+ **[La notion de cascade en CSS](#la-notion-de-cascade-en-css)**  
+ **[L'héritage en CSS](#lheritage)**  
+ **[Flexbox](#flexbox)**  
+ **[Introduction à CSS Grid](#introduction-a-css-grid)**  
+ **[Les combinateurs](#les-combinateurs)**  
+ **[Préprocesseur CSS](#préprocesseur)**
+
+---
+
+💡 *Note*: Chaque section ci-dessus renvoie à un chapitre détaillé pour approfondir tes connaissances sur le CSS. Navigue directement en cliquant sur les liens !
+   
+
 ## La structure du css
 
 ![Structure du css](structure-css.jpg)
@@ -436,7 +463,7 @@ En gras = les plus important pour le responsive
 
 Google Fonts est un service qui permet d'intégrer facilement des polices web gratuites et ouvertes dans des projets.
 
-## Intégrer des polices extérieurs 
+### Intégrer des polices extérieurs 
 
 ### importer une police depuis Google Fonts
 C'est la méthode la plus facile. Elle consiste à importer une police __depuis Google Fonts__ en ajoutant un lien dans le ```<head>``` du fichier HTML.
@@ -580,7 +607,7 @@ __baseline__ ➝ Aligne sur la ligne de base du texte.
 
 ![Image du flex-wrap](flew-wrap.png)
 
-# 🎯 Introduction à CSS Grid
+## Introduction à CSS Grid
 
 **CSS Grid** est un système de mise en page en deux dimensions qui permet d'organiser des éléments sous forme de grille, avec des colonnes et des lignes.
 
@@ -800,7 +827,7 @@ __conclusion :__
 - Améliore la structure : Code plus propre et organisé.
 - Plus de puissance : Ajoute des fonctionnalités que CSS seul ne propose pas.
 
-## Le Mécanisme du Preprocessing en CSS (Input ➡️ Output)
+### Le Mécanisme du Preprocessing en CSS (Input ➡️ Output)
 
 Un préprocesseur CSS (comme Sass ou Less) agit comme un compilateur qui transforme un code CSS enrichi en CSS standard utilisable par les navigateurs.
 
