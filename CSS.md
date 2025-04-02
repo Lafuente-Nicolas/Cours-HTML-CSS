@@ -690,7 +690,3 @@ Pour **aligner tout le conteneur** :
 | 2D (lignes + colonnes) | 1D (soit lignes, soit colonnes) |
 | Idéal pour les mises en page complètes | Idéal pour aligner des éléments sur une seule ligne |
 | Positionnement précis | Disposition plus fluide |
-<<<<<<< HEAD
-
-=======
->>>>>>> 1b5356d9a69f616dc63ed0c515d6cd48f6fee983
