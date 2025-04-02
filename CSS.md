@@ -300,7 +300,7 @@ __Il existe 5 types de positionnement principaux:__
 
  ### 2. Position relative
 
-- Comportement : L’élément reste dans le flux normal mais peut être déplacé avec top, bottom, left, right.
+- Comportement : Déplacé par rapport à sa position de base (pensé à l'exemple du carré en pointillé).
 -  Quand l’utiliser ? : Pour décaler légèrement un élément tout en conservant son espace d’origine.
 ```css
 .box {
@@ -312,7 +312,7 @@ __Il existe 5 types de positionnement principaux:__
 Effet : L’élément est décalé, mais son espace d’origine reste vide.
 ### 3.Position absolute
 
-- Comportement : L’élément quitte le flux normal et est positionné par rapport à son ancêtre position: relative; le plus proche (sinon, c'est le ```<html>``` qui sert de référence).
+- Comportement : L'élément se place par rapport au pixel 0.
 
 - Quand l’utiliser ? : Pour placer précisément un élément sans affecter les autres.
 ```css
@@ -330,7 +330,7 @@ Effet : L’élément est décalé, mais son espace d’origine reste vide.
 
  ### 4.Position fixed
 
-- Comportement : L’élément est fixé par rapport à la fenêtre du navigateur.
+- Comportement : L’élément est fixé par rapport à la fenêtre du navigateur (viewport).
 
 - Quand l’utiliser ? : Pour créer des menus fixes ou des boutons "Retour en haut".
 ```css
@@ -345,7 +345,7 @@ Effet : L’élément est décalé, mais son espace d’origine reste vide.
 
 ### 5. Position sticky
 
-- Comportement : L’élément est comme relative au départ, puis devient fixed lorsqu’on scroll.
+- Comportement : L’élément est comme static au départ, puis devient fixed lorsqu’on scroll.
 - Quand l’utiliser ? : Pour un menu collant qui reste visible quand on fait défiler.
 
 ```css
@@ -361,9 +361,9 @@ Effet : L’élément reste en haut de la page lorsqu'on scrolle.
 |------------|----------------------------------------------------------------|
 | **static**  | Position normale (par défaut), l'élément suit le flux du document. |
 | **relative** | L'élément peut être déplacé par rapport à sa position normale. |
-| **absolute** | L'élément est retiré du flux normal et se positionne par rapport à son premier parent avec `position: relative;`. |
+| **absolute** | L'élément se place par rapport au pixel 0. |
 | **fixed**    | L'élément est fixé par rapport à la fenêtre du navigateur et ne bouge pas en scrollant. |
-| **sticky**   | L'élément agit comme `relative` au départ, puis devient `fixed` en scrollant. |
+| **sticky**   | L'élément agit comme `static` au départ, puis devient `fixed` en scrollant. |
 
 ## La spécificité en css
 
@@ -401,6 +401,25 @@ La spécificité CSS permet de savoir quelle règle CSS s'applique lorsqu'il y a
 
 ## Manipuler les polices 
 
+### Les tailles de polices 
+
+#### Valeurs relatives
+
+En gras = les plus important pour le responsive 
+
+  __%__ → Pourcentage par rapport à la taille de police de l’élément parent.
+
+    em → Multiplicateur de la taille de police de l’élément parent. 16px par défaut (ex. 2 em = 2 fois la taille parent, ex: élément parent: 16px, 2em= 36px ).
+
+   __rem__ → Multiplicateur basé sur la taille de police de l’élément racine (<html>). par défaut: 16px (mettre font size: 10px au début pour que se soit plus simple à calculer)
+
+  __vw et vh__ → Proportion de la largeur/hauteur de la fenêtre d'affichage (viewport). (= 1% de la largeur/hauteur du viewport)
+
+    ex → Basé sur la hauteur de la lettre "x".
+
+#### Unités fixes
+
+    px → Pixels, taille fixe sur l’écran.
 
 | Propriété      | Description                                      | Exemple                                      |
 |----------------|--------------------------------------------------|----------------------------------------------|
@@ -508,7 +527,7 @@ L'héritage en CSS est le mécanisme qui permet aux éléments enfants de récup
 - On peut forcer l’héritage avec inherit, ou le bloquer avec initial.
 - L'héritage simplifie le CSS, mais doit être compris pour éviter les erreurs.
 
-## Flexox
+## Flexbox
 
 Flexbox (Flexible Box) est un modèle de mise en page CSS qui facilite l'alignement et la distribution des éléments dans un conteneur, même si la taille des éléments est inconnue ou dynamique. Il est particulièrement utile pour créer des mises en page réactives.
 
@@ -664,10 +683,11 @@ Pour **aligner tout le conteneur** :
 ```
 
 
-## Grid vs flexbox
+### Grid vs flexbox
 
 | **Grid** | **Flexbox** |
 |----------|------------|
 | 2D (lignes + colonnes) | 1D (soit lignes, soit colonnes) |
 | Idéal pour les mises en page complètes | Idéal pour aligner des éléments sur une seule ligne |
 | Positionnement précis | Disposition plus fluide |
+
