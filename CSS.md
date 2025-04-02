@@ -690,3 +690,48 @@ Pour **aligner tout le conteneur** :
 | 2D (lignes + colonnes) | 1D (soit lignes, soit colonnes) |
 | Idéal pour les mises en page complètes | Idéal pour aligner des éléments sur une seule ligne |
 | Positionnement précis | Disposition plus fluide |
+
+
+## Les combinateurs 
+
+### Le combinateur enfant (>)
+
+Il sélectionne uniquement les enfants directs d'un élément.
+
+Exemple :
+```css
+.container > p {
+    color: red;
+}
+```
+HTML correspondant :
+
+```html 
+<div class="container">
+    <p>Texte en rouge</p> <!-- ✅ Sélectionné -->
+    <div>
+        <p>Texte normal</p> <!-- ❌ Non sélectionné (pas un enfant direct) -->
+    </div>
+</div>
+```
+
+- Seul le <p> directement à l'intérieur de .container est affecté.
+
+### Le combinateur adjacent (+)
+
+Il sélectionne un élément immédiatement suivant un autre.
+
+Exemple :
+```css
+h1 + p {
+    color: blue;
+}
+```
+HTML correspondant :
+```html
+<h1>Titre</h1>
+<p>Ce paragraphe sera bleu</p> <!-- ✅ Sélectionné -->
+<p>Celui-ci ne sera pas affecté</p> <!-- ❌ Non sélectionné -->
+```
+
+ Le `<p>`qui suit immédiatement un `<h1>` est affecté.
