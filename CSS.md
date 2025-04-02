@@ -717,7 +717,7 @@ HTML correspondant :
 
 - Seul le <p> directement à l'intérieur de .container est affecté.
 
-### Le combinateur adjacent (+)
+### Le combinateur adjacent (+) (frère adjacent)
 
 Il sélectionne un élément immédiatement suivant un autre.
 
@@ -736,7 +736,7 @@ HTML correspondant :
 
  Le `<p>`qui suit immédiatement un `<h1>` est affecté.
 
- ### Le combinateur général (~)
+ ### Le combinateur général (~) (général de frères)
 
 Il sélectionne tous les éléments suivants d'un même parent.
 
@@ -845,4 +845,11 @@ Un préprocesseur CSS (comme Sass ou Less) agit comme un compilateur qui transfo
                     ⬇  
 
           🌍 Chargé par le navigateur ! 🚀
+
+### Compiler le SCSS et le css
+
+Noter dans le terminal :
+``` 
+sass --watch style.scss:style.css
+```
 
