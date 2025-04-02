@@ -735,3 +735,44 @@ HTML correspondant :
 ```
 
  Le `<p>`qui suit immédiatement un `<h1>` est affecté.
+
+ ### Le combinateur général (~)
+
+Il sélectionne tous les éléments suivants d'un même parent.
+
+Exemple :
+```css
+h1 ~ p {
+    color: green;
+}
+```
+HTML correspondant :
+```html
+<h1>Titre</h1>
+<p>Ce texte sera vert</p> <!-- ✅ Sélectionné -->
+<p>Celui-ci aussi</p> <!-- ✅ Sélectionné -->
+<div>Div non affectée</div>
+<p>Ce dernier aussi</p> <!-- ✅ Sélectionné -->
+```
+ Tous les `<p>` qui suivent un `<h1>` dans le même parent seront affectés.
+
+ ### Le combinateur descendant ( - espace)
+
+Il sélectionne tous les éléments d’un type donné à l’intérieur d’un parent, peu importe le niveau d'imbrication.
+Exemple :
+```css
+.container p {
+    color: purple;
+}
+```
+HTML correspondant :
+```html
+<div class="container">
+    <p>Ce texte sera violet</p> <!-- ✅ Sélectionné -->
+    <div>
+        <p>Celui-ci aussi</p> <!-- ✅ Sélectionné -->
+    </div>
+</div>
+```
+
+ Tous les `<p>` à l'intérieur de `.container` (directs ou non) seront affectés.
