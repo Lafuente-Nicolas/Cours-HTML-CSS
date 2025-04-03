@@ -6,7 +6,7 @@
 
 **[La structure du CSS](#la-structure-du-css)**  
 **[Insérer le CSS dans le HTML](#insérer-le-css-dans-le-html)**   
-**[Classes, IDs et sélecteurs](#classes-pseudo-classes-éléments-pseudo-elements-ids-et-le-sélecteur-universel)**  
+**[Les sélecteurs](#Les-sélecteurs)**  
 **[Le Box Model](#le-box-model)**  
 **[Le Positionnement en CSS](#le-positionnement-en-css)**  
 **[La Spécificité en CSS](#la-spécificité-en-css)**  
@@ -146,7 +146,7 @@ Dans cet exemple, le fichier main.css importe le fichier style.css, et le style 
 | **External CSS**      | Styles définis dans un fichier séparé et reliés via `<link>`. | Idéal pour des projets à grande échelle et réutilisables. |
 | **`@import`**         | Permet d'importer un fichier CSS dans un autre fichier CSS. | Organiser et modulariser les styles dans de nombreux fichiers. |
 
-## classes, pseudo-classes, éléments, pseudo-éléments, IDs et le selecteur universel
+## Les sélecteurs
 
 
 
