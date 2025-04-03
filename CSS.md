@@ -6,7 +6,7 @@
 
 **[La structure du CSS](#la-structure-du-css)**  
 **[Insérer le CSS dans le HTML](#insérer-le-css-dans-le-html)**   
-**[Classes, IDs et sélecteurs](#classes-pseudo-classes-éléments-pseudo-elements-ids-et-le-sélecteur-universel)**  
+**[Classes, IDs et sélecteurs](#classes-pseudo-classes-éléments-pseudo-éléments-ids-et-le-sélecteur-universel)**  
 **[Le Box Model](#le-box-model)**  
 **[Le Positionnement en CSS](#le-positionnement-en-css)**  
 **[La Spécificité en CSS](#la-spécificité-en-css)**  
