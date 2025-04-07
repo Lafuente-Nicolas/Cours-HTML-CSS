@@ -97,3 +97,35 @@ body {
 
 En général, tu les mets tout en haut de ton fichier .scss, ou mieux encore : Tu crées un fichier spécial juste pour elles, par exemple : variables.scss
 
+## L'imbrication 
+
+ L’imbrication (ou nesting) est une des fonctionnalités les plus pratiques de SASS, et elle permet d’écrire ton CSS de façon plus claire et structurée, surtout quand tu travailles avec des éléments HTML imbriqués (comme dans un menu, un formulaire, etc.).
+
+```scss
+ .card {
+  background: white;
+
+  h2 {
+    font-size: 24px;
+  }
+
+  p {
+    color: grey;
+  }
+}
+```
+
+### Utiliser le & 
+
+Le symbole `&` sert à réutiliser le nom du parent dans les sous-sélecteurs. C’est super utile pour les pseudo-classes, les états (:hover, :active, etc.)
+
+```scss
+.button {
+  background: blue;
+  color: white;
+
+  &:hover {
+    background: darkblue;
+  }
+}
+```
