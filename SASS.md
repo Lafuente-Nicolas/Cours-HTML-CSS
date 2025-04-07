@@ -264,3 +264,58 @@ Et on l’utilise comme ça :
   @include border-radius(10px);   // Remplace la valeur
 }
 ```
+
+## Architecture 7-1
+```
+scss/
+│
+├── abstracts/      // Variables, fonctions, mixins
+├── base/           // Styles de base (reset, typographie…)
+├── components/     // Petits composants (boutons, cards…)
+├── layout/         // Grilles, header, footer, sidebar…
+├── pages/          // Styles spécifiques aux pages
+├── themes/         // Thèmes (clair/sombre, Noël…)
+├── vendors/        // Bibliothèques externes (Bootstrap, etc.)
+│
+└── main.scss       // Point d’entrée qui importe tout
+```
+
+### Détail des dossiers:
+
+1. abstracts/
+
+Contient la base de ton projet :
+➡️ _variables.scss, _mixins.scss, _functions.scss
+
+2. base/
+
+Tout ce qui est global :
+➡️ _reset.scss, _typography.scss, _base.scss
+
+3. components/
+
+Les petits blocs réutilisables :
+➡️ _button.scss, _card.scss, _navbar.scss
+
+4. layout/
+
+Organisation générale du site :
+➡️ _header.scss, _footer.scss, _grid.scss, _sidebar.scss
+
+5. pages/
+
+Styles spécifiques à une page :
+➡️ _home.scss, _contact.scss, _about.scss
+
+6. themes/
+
+Différents thèmes ou skins :
+➡️ _light.scss, _dark.scss
+
+7. vendors/
+
+Contient les styles venant de bibliothèques externes, comme Bootstrap, OwlCarousel, etc.
+
+Fichiers typiques :
+
+    _bootstrap.scss  _swiper.scss
