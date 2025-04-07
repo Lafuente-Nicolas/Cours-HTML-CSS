@@ -248,3 +248,19 @@ Et on l’utilise comme ça :
 ```
 à utiliser si les valeurs change a chaque fois.
 
+### Mixins avec paramètres par défaut
+```scss
+@mixin border-radius($radius: 5px) {
+  border-radius: $radius;
+}
+```
+
+```scss
+.card {
+  @include border-radius;         // Utilise la valeur par défaut
+}
+
+.button {
+  @include border-radius(10px);   // Remplace la valeur
+}
+```
