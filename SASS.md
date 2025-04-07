@@ -73,3 +73,27 @@ Noter dans le terminal :
 ``` 
 sass --watch style.scss:style.css
 ```
+## Variable SASS
+
+Une variable permet de stocker une valeur qu’on pourra réutiliser plusieurs fois dans le fichier .scss.
+C’est comme une petite boîte dans laquelle on mets quelque chose (une couleur, une taille, une police…), et qu'on peux ouvrir à chaque fois qu'on en as besoin.
+
+Les variables en SASS __commencent toujours par un $.__
+
+exemple:
+
+```scss
+$ma-couleur: #ff5733;
+$taille-texte: 18px;
+$ma-police: 'Roboto', sans-serif;
+```
+```scss
+body {
+  color: $ma-couleur;
+  font-size: $taille-texte;
+}
+```
+### Ou mettre les variables :
+
+En général, tu les mets tout en haut de ton fichier .scss, ou mieux encore : Tu crées un fichier spécial juste pour elles, par exemple : variables.scss
+
