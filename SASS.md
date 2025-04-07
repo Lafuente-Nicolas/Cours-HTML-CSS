@@ -180,6 +180,8 @@ Tu n’écris pas le _ ni le .scss. SASS les comprend automatiquement.
 
 ## L'héritage 
 
+### Extend
+
 Le mot-clé `@extend` permet de partager les propriétés d'une règle CSS avec une autre règle. Lorsque tu utilises `@extend`, la règle qui reçoit l'extension hérite de toutes les propriétés de la règle source, sans dupliquer le code.
 
 Exemple simple :
@@ -202,3 +204,47 @@ Tu veux qu’une autre classe hérite de ces propriétés sans répéter le mêm
   padding: 10px 20px;
 }
 ```
+### Mixins
+
+Un mixin est un bloc de code réutilisable en SASS.
+Il te permet d’écrire un ensemble de règles CSS une seule fois, puis de les réutiliser facilement ailleurs dans ton code.
+
+Exemple: 
+```scss
+@mixin box-shadow {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+```
+Pour lutiliser, il faut `@include` :
+```scss
+.card {
+  @include box-shadow;
+  background: white;
+}
+```
+Comme les valeurs ne vont pas changer plutot utilisé __l'extend__, si les valeurs changent plutot utilisé __les mixins avec paramètres__
+
+### Mixins avec paramètres 
+
+```scss
+@mixin button-style($bg-color, $text-color, $padding) {
+  background-color: $bg-color;
+  color: $text-color;
+  padding: $padding;
+  border: none;
+  border-radius: 5px;
+}
+```
+Et on l’utilise comme ça :
+```scss
+.btn-primary {
+  @include button-style(#3498db, white, 10px 20px);
+}
+
+.btn-danger {
+  @include button-style(#e74c3c, white, 12px 24px);
+}
+```
+à utiliser si les valeurs change a chaque fois.
+
