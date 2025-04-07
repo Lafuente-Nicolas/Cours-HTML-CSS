@@ -20,3 +20,56 @@ __conclusion :__
 -  Facilite la maintenance : Modifications rapides grâce aux variables et mixins.
 - Améliore la structure : Code plus propre et organisé.
 - Plus de puissance : Ajoute des fonctionnalités que CSS seul ne propose pas.
+
+### Le Mécanisme du Preprocessing en CSS (Input ➡️ Output)
+
+Un préprocesseur CSS (comme Sass ou Less) agit comme un compilateur qui transforme un code CSS enrichi en CSS standard utilisable par les navigateurs.
+
+- __Étapes du Preprocessing__ :
+
+1. Écriture du code avec un préprocesseur (Input)
+
+    Utilisation de variables, mixins, imbrication, etc.
+
+2. Compilation par le préprocesseur
+
+    Transformation du code en CSS standard
+
+3. Génération du fichier CSS final (Output)
+
+    Ce fichier est chargé par le navigateur
+
+          🎨 Code avec préprocesseur (Input)
+          ┌───────────────────────────────┐
+          │ $primary-color: #3498db;      │  (SCSS/Less)
+          │                               │
+          │ button {                      │
+          │   background-color: $primary-color; │
+          │   color: white;               │
+          │ }                             │
+          └───────────────────────────────┘
+                    ⬇  (Compilation)
+
+          ⚙️ Le préprocesseur (Sass/Less)
+          ┌───────────────────────────────┐
+          │ Transforme le code en CSS pur │
+          └───────────────────────────────┘
+                    ⬇  
+
+          ✅ Code CSS standard (Output)
+          ┌───────────────────────────────┐
+          │ button {                      │
+          │   background-color: #3498db;  │
+          │   color: white;               │
+          │ }                             │
+          └───────────────────────────────┘
+                    ⬇  
+
+          🌍 Chargé par le navigateur ! 🚀
+
+### Compiler le SCSS et le css
+
+Noter dans le terminal :
+``` 
+sass --watch style.scss:style.css
+```
