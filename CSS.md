@@ -6,11 +6,8 @@
 
 **[La structure du CSS](#la-structure-du-css)**  
 **[Insérer le CSS dans le HTML](#insérer-le-css-dans-le-html)**   
-<<<<<<< HEAD
-**[Les sélecteurs](#Les-sélecteurs)**  
-=======
+**[Les sélecteurs](#Les-sélecteurs)** 
 **[Classes, IDs et sélecteurs](#classes-pseudo-classes-éléments-pseudo-éléments-ids-et-le-sélecteur-universel)**  
->>>>>>> 8e04e1e5d67444ecd7c307afa241d911bbc19baf
 **[Le Box Model](#le-box-model)**  
 **[Le Positionnement en CSS](#le-positionnement-en-css)**  
 **[La Spécificité en CSS](#la-spécificité-en-css)**  
