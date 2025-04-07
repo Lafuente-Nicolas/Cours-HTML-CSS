@@ -95,7 +95,7 @@ body {
 ```
 ### Ou mettre les variables :
 
-En général, tu les mets tout en haut de ton fichier .scss, ou mieux encore : Tu crées un fichier spécial juste pour elles, par exemple : variables.scss
+En général, tu les mets tout en haut de ton fichier .scss, ou mieux encore : Tu crées un fichier spécial juste pour elles, par exemple : _variables.scss
 
 ## L'imbrication 
 
@@ -155,6 +155,28 @@ exemple complet:
   }
 }
 ```
+## Un partial en SASS 
+
+Un partial (ou fichier partiel) est un fichier .scss qui contient une partie du code CSS,
+On n’utilise pas un partial tout seul, on l’importe dans un fichier principal, souvent style.scss.
+
+ Exemple de partial:
+
+Tu crées un fichier appelé _variables.scss (le _ est important).
+```scss
+// _variables.scss
+$primary-color: #3498db;
+$font-stack: 'Roboto', sans-serif;
+```
+### Comment on importe un partial ?
+
+Tu utilises la directive `@import` dans ton fichier principal.
+```scss
+// style.scss ou main.scss
+@import 'variables';
+```
+Tu n’écris pas le _ ni le .scss. SASS les comprend automatiquement.
+
 
 ## L'héritage 
 
