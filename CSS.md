@@ -426,7 +426,9 @@ La spécificité CSS permet de savoir quelle règle CSS s'applique lorsqu'il y a
 
 - Sélecteur universel (*) → 0 point (aucune spécificité)
 
+## La spécificité en CSS
 
+<<<<<<< HEAD
 ## Manipuler les polices 
 
 ### Les tailles de polices 
@@ -880,4 +882,12 @@ Noter dans le terminal :
 ``` 
 sass --watch style.scss:style.css
 ```
+=======
+### Règles de base de la spécificité:
 
+- L’ordre d’application → Si deux règles ont la même spécificité, la dernière écrite (plus bas dans le CSS) est appliquée.
+
+- Les sélecteurs les plus précis sont prioritaires sur les sélecteurs plus généraux.
+>>>>>>> release/1.0.0
+
+- !important > Inline styles > ID > Classe / Attributs / Pseudo-classes > Éléments
