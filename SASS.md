@@ -129,3 +129,54 @@ Le symbole `&` sert à réutiliser le nom du parent dans les sous-sélecteurs. C
   }
 }
 ```
+Il vaut mieux limiter __l’imbrication à 2 ou 3 niveaux max__.
+
+exemple complet: 
+
+```scss
+.navbar {
+  background-color: #333;
+
+  ul {
+    list-style: none;
+
+    li {
+      display: inline-block;
+
+      a {
+        color: white;
+        text-decoration: none;
+
+        &:hover {
+          color: #f39c12;
+        }
+      }
+    }
+  }
+}
+```
+
+## L'héritage 
+
+Le mot-clé `@extend` permet de partager les propriétés d'une règle CSS avec une autre règle. Lorsque tu utilises `@extend`, la règle qui reçoit l'extension hérite de toutes les propriétés de la règle source, sans dupliquer le code.
+
+Exemple simple :
+
+Imaginons que tu as une classe `.base` avec des propriétés communes :
+
+```scss
+.base {
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.5;
+}
+```
+Tu veux qu’une autre classe hérite de ces propriétés sans répéter le même code. Tu peux utiliser `@extend` :
+
+```scss
+.button {
+  @extend .base;
+  background-color: #3498db;
+  padding: 10px 20px;
+}
+```
